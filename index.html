@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VapingCation服务器更新日志</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #ff7f9e;
+            --secondary-color: #6c5ce7;
+            --bg-color: #f8f9fa;
+            --card-bg: rgba(255, 255, 255, 0.9);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', '微软雅黑', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 导航栏 */
+        .navbar {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 1rem 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-title {
+            color: var(--secondary-color);
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 主内容区 */
+        .main-content {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 2rem;
+        }
+
+        /* 更新卡片 */
+        .update-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .update-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .update-date {
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .update-title {
+            color: var(--secondary-color);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* 侧边栏 */
+        .sidebar {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 1.5rem;
+            height: fit-content;
+        }
+
+        /* 按钮样式 */
+        .btn {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+
+        .anime-decoration {
+            position: fixed;
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <h1 class="nav-title"><i class="fas fa-gamepad"></i> VapingCation服务器更新日志</h1>
+    </nav>
+
+    <div class="main-content">
+        <!-- 主要更新内容 -->
+        <main>
+            <article class="update-card">
+                <div class="update-date">VC Build.0001 (2024/11/24 17:47) - 正式版</div>
+                <h2 class="update-title">✨ VapingCation回归测试服务端</h2>
+                <ul>
+                    <li>测试服务端</li>
+                    <li>这并不代表我们的最终服务端</li>
+                    <li>2023的VapingCation的服务端，目前没有较大更新</li>
+                </ul>
+            </article>
+
+            <article class="update-card">
+                <div class="update-date">VC Build.0002 (2025/1/23 22:42) - 正式版</div>
+                <h2 class="update-title">🎮 VapingCation 2025 服务端</h2>
+                <ul>
+                    <li>更换了大厅和起床战争</li>
+                    <li>修改了VC Build.0001已知BUG</li>
+                    <li>修改了起床战争无法购买的BUG</li>
+                    <li>修改了起床战争玩家可以直接自己挖掉直接床的问题</li>
+                    <li>修改了起床战争中无法升级的BUG</li>
+                </ul>
+            </article>
+
+            <article class="update-card">
+                <div class="update-date">VC Build.0002.5 (2025/1/26 12:00) - 测试版</div>
+                <h2 class="update-title">🫤 VapingCation 2025-Dev 服务端</h2>
+                <ul>
+                    <li>修复了点击NPC无法加入起床战争的问题</li>
+                    <li>修复了起床战争无法重置的问题 </li>
+                    <li>在HvH服务器中加入了适当的反作弊插件以保证服务器的正常运行</li>
+                    <li>增加了起床战争的房间数</li>
+                    <li>增加了空岛战争</li>
+                    <li>增加了1v1单挑模式</li>
+                </ul>
+            </article>
+
+            <article class="update-card">
+                <div class="update-date">VC Build.0003 (2025/1/25 16:30) - 测试版</div>
+                <h2 class="update-title">😣 VapingCation 2025-Dev Pro Max 服务端</h2>
+                <ul>
+                    <li>修复了起床战争中菜单打开后空白以及物品显示错误</li>
+                    <li>修复了起床战争中可白嫖物品 </li>
+                    <li>修复了起床战争中计分板颜色显示错误 4.修复了起床战争中游戏地图无法重置 </li>
+                    <li>修复了起床战争中游戏地图无法重置</li>
+                    <li>修复了等待大厅在游戏开始后无法正常去除 </li>
+                    <li>修复了游戏开启倒计时以及准备阶段倒计时的冲突</li>
+                    <li>修复了输入/bw指令后导致的线程崩溃</li>
+                    <li>修复了某些队伍的床不受保护</li>
+                    <li>修复了破坏床后信息颜色不一致</li>
+                    <li>优化了过多的计时器导致的服务器卡顿</li>
+                    <li>增加了起床房间的数量</li>
+                    <li>修复了Web服务（网站）的语法错误</li>
+                </ul>
+            </article>
+        </main>
+
+
+
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+            <h3>📅 计划更新</h3>
+            <ul>
+                <li>开启合法服务器</li>
+                <li>添加GPG小游戏服务器</li>
+                <li>添加生存（1.21.4）服务器</li>
+            </ul>
+
+            <button class="btn" style="margin-top: 1rem;" onclick="window.open('https://qm.qq.com/cgi-bin/qm/qr?k=60A9ggkTDVShbtarU5LwM1HzS6KNG7h7&jump_from=webapi&authKey=k6xYCpVuBkVonJHO1/QNKRmvGmwklgKJzJKtwqy//azyT05tLd/liXlLXWofndAR')">
+                <i class="fab fa-qq"></i> 加入社区
+            </button>
+        </aside>
+    </div>
+</div>
+
+<!-- 动画效果 -->
+<script>
+    document.querySelectorAll('.update-card').forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.style.boxShadow = '0 8px 12px rgba(0, 0, 0, 0.15)';
+        });
+
+        card.addEventListener('mouseleave', () => {
+            card.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.05)';
+        });
+    });
+</script>
+</body>
+</html>
